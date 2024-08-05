@@ -1,0 +1,230 @@
+body{
+margin: 0px;
+padding: 0px;
+}
+.poster{
+    background-color:#1212;
+}
+.poster img{
+width: 100%;
+/* height: 30px; */
+max-height: 300px;
+max-width: cover;
+margin: auto;
+display: block;
+}
+.title{
+    text-align: center;
+    font-size: 1.54rem;
+    font-weight: bold;
+    margin: 10px;
+    padding: 5px;
+
+}
+.cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    /* border: 2px solid black; */
+    
+}
+.pro{
+    box-shadow: 2px 2px 30px rgba(66, 57, 238, 0.2);
+    opacity: 1;
+    border: 2px solid azure;
+    margin: 31px;
+    padding: 23px;
+    width: 350px;
+    height: 340px;
+    /* cursor: pointer; */
+    /* border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+    border-radius: 25px;
+    text-align: center;
+    transition-property: all;
+    justify-content: center;
+    
+    /* text-decoration: none; */
+    /* align-items: center; */
+}
+.pro:hover{
+    background-color: azure;
+    /* width: 500px; */
+    transform: translate3d(0px, -5px, 0px);
+
+    /* border: 2px solid red; */
+}
+.pro a{
+text-decoration: none;
+/* color: black; */
+}
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+}
+.imgdesc{
+    font-size: 1em;
+}
+.imgdesc a:hover{
+    /* font-size: 2rem; */
+    /* transform: translate3d(0px, -5px, 0px); */
+    text-decoration: underline;
+}
+.fot1{
+    text-align: center;
+    margin: 23px;
+}
+.fot1 a{
+    text-decoration: none;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2b3340;
+    transition: 0.5s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #12a565;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#header{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: rgb(131, 229, 131);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#footer.cont{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+
+}
+.foot1{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: rgb(101, 248, 189);
+width: 100%;
+height: 250px;
+margin: 10px;
+padding: 10px;
+flex-wrap: wrap;
+flex-direction: row;
+/* border: 2px solid red; */
+}
+.foot1 a{
+    text-decoration: none;
+}
+.sus{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* border: 2px solid red; */
+    width: 100%;
+    transform: translate3d(0px,-11px,0px);
+    font-size: 20px;
+    flex-wrap: wrap;
+    margin-top: 19px;
+    font-weight: bold;
+
+}
+.foot2{
+    display: flex;
+    width: 100%;
+    height: 23px;
+}
+.email{
+    width: 220px;
+    transform: matrix3d(0px, -22px,0px);
+}
+.email input{
+    width: 200px;
+    height: 20px;
+}
+.btn{
+    /* margin: 2px; */
+    padding: 2px;
+    /* border: 2px solid red; */
+    background-color:black;
+    width: 70px;
+    height: 17px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+
+}
+.btn:hover{
+background-color:green;
+}
+.connect{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transform: translate3d(0px, -55px,0px);
+text-align: center;
+margin: 10px;
+}
+.connect h3 {
+    text-align: center;
+    padding: 10px;
+    margin-top: 29px;
+}
+.scm{
+    width: 100%;
+    
+}
+
+/* media queries */
+@media(max-width:342px){
+.connect{
+    transform: translate3d(0px,-50px,0px);
+}
+
+.email input{
+    width: 244px;
+    transform: translate3d(-16px,0px,0px);
+}
+}
